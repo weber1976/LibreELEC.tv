@@ -77,6 +77,11 @@ if [ "$TARGET" = target ] ; then
     cp $PKG_DIR/profile.d/*.conf $INSTALL/etc/profile.d/
   fi
 
+  if [ -d $PKG_DIR/profile.d/$PROJECT ]; then
+    mkdir -p $INSTALL/etc/profile.d
+    cp $PKG_DIR/profile.d/$PROJECT/*.conf $INSTALL/etc/profile.d/
+  fi
+
   if [ -d $PKG_DIR/tmpfiles.d ]; then
     mkdir -p $INSTALL/usr/lib/tmpfiles.d
     cp $PKG_DIR/tmpfiles.d/*.conf $INSTALL/usr/lib/tmpfiles.d
