@@ -1,0 +1,12 @@
+--- a/qtwebengine/src/3rdparty/chromium/gpu/command_buffer/service/texture_manager.h	2016-10-17 11:14:19.000000000 +0200
++++ b/qtwebengine/src/3rdparty/chromium/gpu/command_buffer/service/texture_manager.h	2016-11-12 07:18:37.957412354 +0100
+@@ -18,8 +18,8 @@
+ #include "base/containers/hash_tables.h"
+ #include "base/macros.h"
+ #include "base/memory/ref_counted.h"
+-#include "gpu/command_buffer/service/feature_info.h"
+ #include "gpu/command_buffer/service/gl_utils.h"
++#include "gpu/command_buffer/service/feature_info.h"
+ #include "gpu/command_buffer/service/memory_tracking.h"
+ #include "gpu/command_buffer/service/sampler_manager.h"
+ #include "gpu/gpu_export.h"
